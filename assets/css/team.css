@@ -77,7 +77,9 @@
     text-decoration: none;
   }
   
-  h1,
+  h1{
+    color: black;
+  }
   h2,
   h3,
   h4,
@@ -1587,6 +1589,7 @@
     font-weight: 700;
     margin-bottom: 5px;
     font-size: 20px;
+    color: black;
   }
   
   .team .team-member span {
@@ -1651,7 +1654,7 @@
   }
   
   .team .team-member .social a:hover {
-    background: var(--accent-color);
+    background: #228B22; /*COR DOS ICONES DE CONTATO TRC*/
   }
   
   .team .team-member .social a:hover i {

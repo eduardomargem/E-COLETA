@@ -6,6 +6,22 @@
 * License: https://bootstrapmade.com/license/
 */
 
+/**
+* Template Name: Eterna
+* Template URL: https://bootstrapmade.com/eterna-free-multipurpose-bootstrap-template/
+* Updated: Aug 07 2024 with Bootstrap v5.3.3
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/**
+* Template Name: Eterna
+* Template URL: https://bootstrapmade.com/eterna-free-multipurpose-bootstrap-template/
+* Updated: Aug 07 2024 with Bootstrap v5.3.3
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
 /*--------------------------------------------------------------
 # Font & Color Variables
 # Help: https://bootstrapmade.com/color-system/
@@ -77,7 +93,9 @@
     text-decoration: none;
   }
   
-  h1,
+  h1{
+    color: black;
+  }
   h2,
   h3,
   h4,
@@ -1587,6 +1605,7 @@
     font-weight: 700;
     margin-bottom: 5px;
     font-size: 20px;
+    color: black;
   }
   
   .team .team-member span {
@@ -1651,7 +1670,7 @@
   }
   
   .team .team-member .social a:hover {
-    background: var(--accent-color);
+    background: #228B22; /*COR DOS ICONES DE CONTATO TRC*/
   }
   
   .team .team-member .social a:hover i {

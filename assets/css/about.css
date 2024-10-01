@@ -77,14 +77,18 @@
     text-decoration: none;
   }
   
-  h1,
+  h1{
+    color: black;
+  }
   h2,
-  h3,
   h4,
   h5,
   h6 {
     color: white;
     font-family: var(--heading-font);
+  }
+  h3{
+    color: black;
   }
   
   /* PHP Email Form Messages

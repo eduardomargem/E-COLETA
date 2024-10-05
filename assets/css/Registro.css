@@ -1,0 +1,202 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; 
+    margin: 0;
+    padding: 0;
+    overflow: auto; 
+    background: url('https://cdn.pixabay.com/photo/2016/10/18/17/24/tree-1750784_1280.jpg') no-repeat center center fixed;
+    background-size: cover; 
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.5s forwards;
+    position: relative;
+}
+
+.box-login {
+    width: 350px;
+    padding: 40px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
+    border: 1px solid rgba(255, 255, 255, 0.5); 
+    border-radius: 15px; 
+    backdrop-filter: blur(15px); 
+    text-align: center;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2); 
+    color: #000000;
+    max-height: 80vh;
+    overflow-y: auto;
+    margin: auto;
+    transition: transform 0.3s ease; 
+}
+
+.box-login:hover {
+    transform: translateY(-5px); 
+}
+
+.box-login h1 {
+    color: #2e7d32; 
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.box-login h2 {
+    color: #000000;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.banner {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    transition: border-color 0.3s ease; 
+}
+
+.input-group input:focus {
+    border-color: #2e7d32; 
+    outline: none; 
+}
+
+.error-message {
+    display: block;
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.forgot-link, .register-link {
+    margin: 15px 0;
+    color: #fff;
+}
+
+.social {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    background-color: #228B22;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px; 
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold; 
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #1e7e1e;
+    transform: scale(1.05);
+}
+
+.success-message,
+.error-message {
+    display: none;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: opacity 0.5s ease; 
+}
+
+.success-message {
+    color: rgb(4, 180, 13);
+}
+
+.error-message {
+    color: red;
+}
+
+.success-message {
+    animation: slideIn 0.5s forwards;
+}
+
+.error-message {
+    animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos das divs sustentáveis */
+.sustentavel {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    font-weight: bold;
+    color: #228B22;
+    position: absolute;
+    width: 200px;
+}
+
+/* Posicionamento: duas no lado esquerdo e duas no lado direito */
+#sustentavel1 {
+    top: 20%;
+    left: 2%; /* Alinhado à esquerda */
+}
+
+#sustentavel2 {
+    top: 40%;
+    left: 2%; /* Abaixo do primeiro, alinhado à esquerda */
+}
+
+#sustentavel3 {
+    top: 20%;
+    right: 2%; /* Alinhado à direita */
+}
+
+#sustentavel4 {
+    top: 40%;
+    right: 2%; /* Abaixo do terceiro, alinhado à direita */
+}  

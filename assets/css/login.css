@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; 
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+    background: url('https://cdn.pixabay.com/photo/2016/10/18/17/24/tree-1750784_1280.jpg') no-repeat center center fixed;
+    background-size: cover; /* Faz com que a imagem de fundo cubra toda a tela */
+}
+
+html, body {
+    overflow: hidden; /* Remove o scroll da página */
+}
+
+#container {
+    display: flex; /* Usa flexbox para centralizar */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Altura total da janela de visualização */
+}
+
+.box {
+    width: 350px;
+    padding: 40px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Borda sutil */
+    border-radius: 15px; /* Bordas mais arredondadas */
+    backdrop-filter: blur(15px); /* Blur mais forte */
+    text-align: center;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2); /* Sombreamento mais sutil */
+    color: #000000;
+    max-height: 80vh;
+    overflow-y: auto;
+    margin: auto;
+    transition: transform 0.3s ease; /* Transição suave */
+}
+
+.box:hover {
+    transform: translateY(-5px); /* Leve elevação ao passar o mouse */
+}
+
+.box h1 {
+    color: #2e7d32; /* Verde mais escuro */
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.box h2 {
+    color: #000000;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.box input {
+    width: 100%; /* Largura total dos inputs */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 15px; /* Margem abaixo */
+    border: 1px solid #ddd; /* Borda suave */
+    border-radius: 4px; /* Bordas arredondadas */
+    box-sizing: border-box; /* Inclui padding e border no total da largura */
+}
+
+.box a {
+    color: #007BFF; /* Cor do link */
+    text-decoration: none; /* Remove sublinhado */
+    margin-bottom: 10px; /* Margem abaixo */
+    display: block; /* Faz com que o link ocupe toda a largura */
+}
+
+button {
+    background-color: #228B22; /* Cor de fundo do botão */
+    color: #ffffff; /* Cor do texto do botão */
+    border: none; /* Sem borda */
+    padding: 10px; /* Espaçamento interno */
+    width: 100%; /* Largura total do botão */
+    border-radius: 4px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor para pointer */
+    font-size: 16px; /* Tamanho da fonte do botão */
+    margin-top: 10px; /* Margem acima do botão */
+}
+
+button:hover {
+    background-color: #1e7e1e; /* Cor de fundo do botão ao passar o mouse */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #2e7d32; /* Verde */
+    color: #ffffff; /* Texto branco */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #1b5e20; /* Verde mais escuro no hover */
+    transform: scale(1.05);
+}
+
+.social {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social img {
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s;
+    margin: 0 10px;
+}
+
+.social img:hover {
+    transform: scale(1.1);
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.error-message {
+    color: red;
+    display: none; 
+}
+/*  nome do site*/
+.sitename {
+    font-size: 26px;
+    padding: 0 0 0 8px;
+    margin: 11px 0;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-left: 8px solid var(--accent-color); 
+    color: #228B22; 
+    text-align: center; 
+}

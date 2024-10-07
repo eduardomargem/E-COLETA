@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criar conta | É-coleta </title>
+  
+  <link rel="stylesheet" href="assets/css/Registro.css">
+  <link rel="stylesheet" href="assets/css/media.css">
+  
+  <!-- SweetAlert CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+  
+  <!-- jQuery e jQuery Mask Plugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+  
+  <!-- Adicionando SweetAlert JS -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <div id="container">
+    <div class="banner">
+      <nav>
+        <ul>
+          <div></div>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="box-login">
+      <h1>Junte-se a nós,<br>Faça o seu cadastro para aproveitar os recursos do site!</h1>
+      <div class="box-account">
+        <h2>Informe seus dados</h2>
+        <form id="registerForm">
+          <div class="input-group">
+            <label for="username">Apelido</label>
+            <input type="text" name="username" id="username" placeholder="Apelido">
+            <div class="error-message" id="usernameError"></div>
+          </div>
+          <div class="input-group">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="E-mail">
+            <div class="error-message" id="emailError"></div>
+          </div>
+          <div class="input-group">
+            <label for="cmail">Confirmar o e-mail</label>
+            <input type="email" name="cmail" id="cmail" placeholder="Confirmar o e-mail">
+            <div class="error-message" id="cmailError"></div>
+          </div>
+          <div class="input-group">
+            <label for="password">Senha</label>
+            <input type="password" name="password" id="password" placeholder="Senha">
+            <div class="error-message" id="passwordError"></div>
+          </div>
+          <div class="input-group">
+            <label for="cpassword">Confirmar a senha</label>
+            <input type="password" name="cpassword" id="cpassword" placeholder="Confirmar a senha">
+            <div class="error-message" id="cpasswordError"></div>
+          </div>
+          <div class="input-group">
+            <label for="cpf">CPF</label>
+            <input type="text" name="cpf" id="cpf" placeholder="CPF">
+            <div class="error-message" id="cpfError"></div>
+          </div>
+          <div class="input-group">
+            <label for="phone">Telefone</label>
+            <input type="text" name="phone" id="phone" placeholder="Telefone">
+            <div class="error-message" id="phoneError"></div>
+          </div>
+          <div class="input-group">
+            <label for="address">Endereço</label>
+            <input type="text" name="address" id="address" placeholder="Endereço">
+            <div class="error-message" id="addressError"></div>
+          </div>
+          <div class="input-group">
+            <label for="number">Número</label>
+            <input type="text" name="number" id="number" placeholder="Número">
+            <div class="error-message" id="numberError"></div>
+          </div>
+          <div class="input-group">
+            <label for="cep">CEP</label>
+            <input type="text" name="cep" id="cep" placeholder="CEP">
+            <div class="error-message" id="cepError"></div>
+          </div>
+          <div class="check">
+            <input type="checkbox" name="termo" id="termo" style="width: 13px; height: 13px;">
+            <label for="termo" style="color: #3d3d3d;">Li e aceito os termos</label>
+          </div>
+          <button type="button" id="registerButton">Criar conta</button> <!-- Alterado para type="button" -->
+        </form>
+      </div>
+    </div>
+    <!-- Divs com mensagens sustentáveis -->
+    <div id="sustentavel1" class="sustentavel">
+      "Reduza, Reutilize, Recicle para um futuro melhor."
+    </div>
+    <div id="sustentavel2" class="sustentavel">
+      "Pequenas ações, grande impacto para o meio ambiente."
+    </div>
+    <div id="sustentavel3" class="sustentavel">
+      "Preservar a natureza é garantir a nossa sobrevivência."
+    </div>
+    <div id="sustentavel4" class="sustentavel">
+      "Energia limpa para um planeta mais sustentável."
+    </div>
+    
+    <div id="successMessage" class="success-message" style="display: none;"></div>
+    <script src="assets/js/TelaRegister.js"></script>
+  </div>
+</body>
+</html>

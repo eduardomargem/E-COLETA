@@ -2539,3 +2539,11 @@ section,
   width: 100%;
   height: 600px; /* Altura do mapa */
 }
+
+#google-map{
+  border: 1px solid #ccc;
+  width: 100%;
+  height: 600px;
+  align-self: center;
+  margin: 0 auto;
+}

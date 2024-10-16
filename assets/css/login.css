@@ -1,130 +1,142 @@
 body {    
-    font-family: Arial, sans-serif;    
-    background-color: #f5f5f5;     
-    margin: 0;    
-    padding: 0;    
-    overflow: hidden;     
-    background: url('https://cdn.pixabay.com/photo/2016/10/18/17/24/tree-1750784_1280.jpg') no-repeat center center fixed;    
-    background-size: cover; 
-  }
-  html, body {    
-    overflow: hidden; 
-  }
-  #container {    
-    display: flex;     
-    justify-content: center;     
-    align-items: center;     
-    height: 100vh; 
-  }
-  .box {    
-    width: 350px;    
-    padding: 40px;    
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));    
-    border: 1px solid rgba(255, 255, 255, 0.5);    
-    border-radius: 15px;     
-    backdrop-filter: blur(15px);     
-    text-align: center;    
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);     
-    color: #000000;    
-    max-height: 80vh;    
-    overflow-y: auto;    
-    margin: auto;    
-    transition: transform 0.3s ease; 
-  }
-  .box:hover {    
-    transform: translateY(-5px); 
-  }
-  .box h1 {    
-    color: #2e7d32;     
-    margin-bottom: 20px;    
-    font-size: 26px;    
-    font-weight: 700;    
-    letter-spacing: 1px;    
-    text-transform: uppercase;
-  }
-  .box h2 {    
-    color: #000000;    
-    margin-bottom: 30px;    
-    font-size: 18px;
-  }
-  .box input {    
-    width: 100%;     
-    padding: 10px;     
-    margin-bottom: 15px;     
-    border: 1px solid #ddd;     
-    border-radius: 4px;     
-    box-sizing: border-box;
-  }
-  .box a {    
-    color: #007BFF;     
-    text-decoration: none;    
-    margin-bottom: 10px;     
-    display: block;
-  }
-  button {    
-    background-color: #228B22;     
-    color: #ffffff;     
-    border: none;     
-    padding: 10px;     
-    width: 100%;     
-    border-radius: 4px;     
-    cursor: pointer;     
-    font-size: 16px;     
-    margin-top: 10px; 
-  }
-  button:hover {    
-    background-color: #1e7e1e; 
-  }
-  button {    
-    width: 100%;    
-    padding: 10px;    
-    border: none;    
-    border-radius: 4px;    
-    background-color: #2e7d32;     
-    color: #ffffff;     
-    font-size: 16px;    
-    cursor: pointer;    
-    transition: background-color 0.3s, transform 0.3s;
-  }
-  button:hover {    
-    background-color: #1b5e20;     
-    transform: scale(1.05);
-  }
-  .social {    
-    margin-top: 20px;    
-    display: flex;    
-    justify-content: space-around;
-  }
-  .social img {    
-    width: 40px;    
-    height: auto;    
-    cursor: pointer;    
-    transition: transform 0.2s;    
-    margin: 0 10px;
-  }
-  .social img:hover {    
-    transform: scale(1.1);
-  }
-  a {    
-    text-decoration: none;    
-    color: #007BFF;    
-    display: block;    
-    margin-bottom: 10px;
-  }
-  .error-message {    
-    color: red;    
-    display: none; 
-  }
-  .sitename {    
-    font-size: 26px;    
-    padding: 0 0 0 8px;    
-    margin: 11px 0;    
-    line-height: 1;    
-    font-weight: 700;    
-    letter-spacing: 1px;    
-    text-transform: uppercase;    
-    border-left: 8px solid var(--accent-color);     
-    color: #228B22;     
-    text-align: center; 
-  }
-  
+  font-family: Arial, sans-serif;    
+  background-color: #f5f5f5;     
+  margin: 0;    
+  padding: 0;    
+  overflow: hidden;     
+  background: url('https://cdn.pixabay.com/photo/2016/10/18/17/24/tree-1750784_1280.jpg') no-repeat center center fixed;    
+  background-size: cover; 
+}
+html, body {    
+  overflow: hidden; 
+}
+#container {    
+  display: flex;     
+  justify-content: center;     
+  align-items: center;     
+  height: 100vh; 
+}
+.box {    
+  width: 350px;    
+  padding: 40px;    
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));    
+  border: 1px solid rgba(255, 255, 255, 0.5);    
+  border-radius: 15px;     
+  backdrop-filter: blur(15px);     
+  text-align: center;    
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);     
+  color: #000000;    
+  max-height: 80vh;    
+  overflow-y: auto;    
+  margin: auto;    
+  transition: transform 0.3s ease; 
+}
+.box:hover {    
+  transform: translateY(-5px); 
+}
+.box h1 {    
+  color: #2e7d32;     
+  margin-bottom: 20px;    
+  font-size: 26px;    
+  font-weight: 700;    
+  letter-spacing: 1px;    
+  text-transform: uppercase;
+}
+.box h2 {    
+  color: #000000;    
+  margin-bottom: 30px;    
+  font-size: 18px;
+}
+.box input {    
+  width: 100%;     
+  padding: 10px;     
+  margin-bottom: 15px;     
+  border: 1px solid #ddd;     
+  border-radius: 4px;     
+  box-sizing: border-box;
+}
+.box a {    
+  color: #007BFF;     
+  text-decoration: none;    
+  margin-bottom: 10px;     
+  display: block;
+}
+button {    
+  background-color: #228B22;     
+  color: #ffffff;     
+  border: none;     
+  padding: 10px;     
+  width: 100%;     
+  border-radius: 4px;     
+  cursor: pointer;     
+  font-size: 16px;     
+  margin-top: 10px; 
+}
+button:hover {    
+  background-color: #1e7e1e; 
+}
+button {    
+  width: 100%;    
+  padding: 10px;    
+  border: none;    
+  border-radius: 4px;    
+  background-color: #2e7d32;     
+  color: #ffffff;     
+  font-size: 16px;    
+  cursor: pointer;    
+  transition: background-color 0.3s, transform 0.3s;
+}
+button:hover {    
+  background-color: #1b5e20;     
+  transform: scale(1.05);
+}
+.social {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  width: 200px; 
+  margin: 0 auto; 
+}
+
+.social img {
+  cursor: pointer;
+  width: 50px; 
+  height: 50px;
+}
+
+
+
+
+.box-login .box-account {
+  width: 80%;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+
+a {    
+  text-decoration: none;    
+  color: #007BFF;    
+  display: block;    
+  margin-bottom: 10px;
+}
+.error-message {    
+  color: red;    
+  display: none; 
+}
+.sitename {    
+  font-size: 26px;    
+  padding: 0 0 0 8px;    
+  margin: 11px 0;    
+  line-height: 1;    
+  font-weight: 700;    
+  letter-spacing: 1px;    
+  text-transform: uppercase;    
+  border-left: 8px solid var(--accent-color);     
+  color: #228B22;     
+  text-align: center; 
+}

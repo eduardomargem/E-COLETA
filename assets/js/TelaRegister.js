@@ -99,7 +99,7 @@ $(document).ready(function () {
   
         if (isValid) {
             Swal.fire('Sucesso', 'Cadastro realizado com sucesso!', 'success').then(() => {
-                window.location.href = 'login.html';=
+                window.location.href = 'login.html';
             });
             $('#registerForm')[0].reset();
             $('.error-message').text('').hide();

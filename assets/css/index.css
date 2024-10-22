@@ -1093,9 +1093,9 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Services Section
+# Services Section 1
 --------------------------------------------------------------*/
-.services .service-item {
+.services .service-item1 {
   background-color: var(--surface-color);
   text-align: center;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
@@ -1104,11 +1104,11 @@ section,
   height: 100%;
 }
 
-.services .service-item .icon {
+.services .service-item1 .icon {
   margin: 0 auto;
   width: 64px;
   height: 64px;
-  background: var(--accent-color);
+  background: #1C5A1C;
   border-radius: 4px;
   display: flex;
   align-items: center;
@@ -1118,13 +1118,13 @@ section,
   transform-style: preserve-3d;
 }
 
-.services .service-item .icon i {
-  color: var(--contrast-color);
+.services .service-item1 .icon i {
+  color: var(--contrast-color); /*cor do icone*/
   font-size: 28px;
   transition: ease-in-out 0.3s;
 }
 
-.services .service-item .icon::before {
+.services .service-item1 .icon::before {
   position: absolute;
   content: "";
   left: -8px;
@@ -1137,39 +1137,436 @@ section,
   transform: translateZ(-1px);
 }
 
-.services .service-item h3 {
+.services .service-item1 h3 {
   font-weight: 700;
   margin: 10px 0 15px 0;
   font-size: 22px;
 }
 
-.services .service-item p {
+.services .service-item1 p {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
 }
 
-.services .service-item:hover {
-  background: var(--accent-color);
-  border-color: var(--accent-color);
+.services .service-item1:hover {
+  background: #1C5A1C;
+  border-color: #1C5A1C;
 }
 
-.services .service-item:hover .icon {
+.services .service-item1:hover .icon {
   background: var(--surface-color);
 }
 
-.services .service-item:hover .icon i {
+.services .service-item1:hover .icon i {
   color: var(--accent-color);
 }
 
-.services .service-item:hover .icon::before {
+.services .service-item1:hover .icon::before {
   background: color-mix(in srgb, var(--background-color), transparent 70%);
 }
 
-.services .service-item:hover h3,
-.services .service-item:hover p {
+.services .service-item1:hover h3,
+.services .service-item1:hover p {
   color: var(--contrast-color);
 }
+
+/*--------------------------------------------------------------
+# Services Section 2
+--------------------------------------------------------------*/
+.services .service-item2 {
+  background-color: var(--surface-color);
+  text-align: center;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  padding: 80px 20px;
+  transition: all ease-in-out 0.3s;
+  height: 100%;
+}
+
+.services .service-item2 .icon {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  background: #444444;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: 0.3s;
+  transform-style: preserve-3d;
+}
+
+.services .service-item2 .icon i {
+  color: var(--contrast-color);
+  font-size: 28px;
+  transition: ease-in-out 0.3s;
+}
+
+.services .service-item2 .icon::before {
+  position: absolute;
+  content: "";
+  left: -8px;
+  top: -8px;
+  height: 100%;
+  width: 100%;
+  background: color-mix(in srgb, var(--accent-color), transparent 80%);
+  border-radius: 5px;
+  transition: all 0.3s ease-out 0s;
+  transform: translateZ(-1px);
+}
+
+.services .service-item2 h3 {
+  font-weight: 700;
+  margin: 10px 0 15px 0;
+  font-size: 22px;
+}
+
+.services .service-item2 p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.services .service-item2:hover {
+  background: #444444;
+  border-color: #444444;
+}
+
+.services .service-item2:hover .icon {
+  background: var(--surface-color);
+}
+
+.services .service-item2:hover .icon i {
+  color: var(--accent-color);
+}
+
+.services .service-item2:hover .icon::before {
+  background: color-mix(in srgb, var(--background-color), transparent 70%);
+}
+
+.services .service-item2:hover h3,
+.services .service-item2:hover p {
+  color: var(--contrast-color);
+}
+
+/*--------------------------------------------------------------
+# Services Section 3
+--------------------------------------------------------------*/
+.services .service-item3 {
+  background-color: var(--surface-color);
+  text-align: center;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  padding: 80px 20px;
+  transition: all ease-in-out 0.3s;
+  height: 100%;
+}
+
+.services .service-item3 .icon {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  background: #fca311;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: 0.3s;
+  transform-style: preserve-3d;
+}
+
+.services .service-item3 .icon i {
+  color: var(--contrast-color);
+  font-size: 28px;
+  transition: ease-in-out 0.3s;
+}
+
+.services .service-item3 .icon::before {
+  position: absolute;
+  content: "";
+  left: -8px;
+  top: -8px;
+  height: 100%;
+  width: 100%;
+  background: color-mix(in srgb, var(--accent-color), transparent 80%);
+  border-radius: 5px;
+  transition: all 0.3s ease-out 0s;
+  transform: translateZ(-1px);
+}
+
+.services .service-item3 h3 {
+  font-weight: 700;
+  margin: 10px 0 15px 0;
+  font-size: 22px;
+}
+
+.services .service-item3 p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.services .service-item3:hover {
+  background: #fca311;
+  border-color: #fca311;
+}
+
+.services .service-item3:hover .icon {
+  background: var(--surface-color);
+}
+
+.services .service-item3:hover .icon i {
+  color: var(--accent-color);
+}
+
+.services .service-item3:hover .icon::before {
+  background: color-mix(in srgb, var(--background-color), transparent 70%);
+}
+
+.services .service-item3:hover h3,
+.services .service-item3:hover p {
+  color: var(--contrast-color);
+}
+
+/*--------------------------------------------------------------
+# Services Section 4
+--------------------------------------------------------------*/
+.services .service-item4 {
+  background-color: var(--surface-color);
+  text-align: center;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  padding: 80px 20px;
+  transition: all ease-in-out 0.3s;
+  height: 100%;
+}
+
+.services .service-item4 .icon {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  background: #007BA7;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: 0.3s;
+  transform-style: preserve-3d;
+}
+
+.services .service-item4 .icon i {
+  color: var(--contrast-color);
+  font-size: 28px;
+  transition: ease-in-out 0.3s;
+}
+
+.services .service-item4 .icon::before {
+  position: absolute;
+  content: "";
+  left: -8px;
+  top: -8px;
+  height: 100%;
+  width: 100%;
+  background: color-mix(in srgb, var(--accent-color), transparent 80%);
+  border-radius: 5px;
+  transition: all 0.3s ease-out 0s;
+  transform: translateZ(-1px);
+}
+
+.services .service-item4 h3 {
+  font-weight: 700;
+  margin: 10px 0 15px 0;
+  font-size: 22px;
+}
+
+.services .service-item4 p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.services .service-item4:hover {
+  background: #007BA7;
+  border-color: #007BA7;
+}
+
+.services .service-item4:hover .icon {
+  background: var(--surface-color);
+}
+
+.services .service-item4:hover .icon i {
+  color: var(--accent-color);
+}
+
+.services .service-item4:hover .icon::before {
+  background: color-mix(in srgb, var(--background-color), transparent 70%);
+}
+
+.services .service-item4:hover h3,
+.services .service-item4:hover p {
+  color: var(--contrast-color);
+}
+
+/*--------------------------------------------------------------
+# Services Section 5
+--------------------------------------------------------------*/
+.services .service-item5 {
+  background-color: var(--surface-color);
+  text-align: center;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  padding: 80px 20px;
+  transition: all ease-in-out 0.3s;
+  height: 100%;
+}
+
+.services .service-item5 .icon {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  background: #780000;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: 0.3s;
+  transform-style: preserve-3d;
+}
+
+.services .service-item5 .icon i {
+  color: var(--contrast-color);
+  font-size: 28px;
+  transition: ease-in-out 0.3s;
+}
+
+.services .service-item5 .icon::before {
+  position: absolute;
+  content: "";
+  left: -8px;
+  top: -8px;
+  height: 100%;
+  width: 100%;
+  background: color-mix(in srgb, var(--accent-color), transparent 80%);
+  border-radius: 5px;
+  transition: all 0.3s ease-out 0s;
+  transform: translateZ(-1px);
+}
+
+.services .service-item5 h3 {
+  font-weight: 700;
+  margin: 10px 0 15px 0;
+  font-size: 22px;
+}
+
+.services .service-item5 p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.services .service-item5:hover {
+  background: #780000;
+  border-color: #780000;
+}
+
+.services .service-item5:hover .icon {
+  background: var(--surface-color);
+}
+
+.services .service-item5:hover .icon i {
+  color: var(--accent-color);
+}
+
+.services .service-item5:hover .icon::before {
+  background: color-mix(in srgb, var(--background-color), transparent 70%);
+}
+
+.services .service-item5:hover h3,
+.services .service-item5:hover p {
+  color: var(--contrast-color);
+}
+
+/*--------------------------------------------------------------
+# Services Section 6
+--------------------------------------------------------------*/
+.services .service-item6 {
+  background-color: var(--surface-color);
+  text-align: center;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  padding: 80px 20px;
+  transition: all ease-in-out 0.3s;
+  height: 100%;
+}
+
+.services .service-item6 .icon {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  background: #b5179e;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: 0.3s;
+  transform-style: preserve-3d;
+}
+
+.services .service-item6 .icon i {
+  color: var(--contrast-color);
+  font-size: 28px;
+  transition: ease-in-out 0.3s;
+}
+
+.services .service-item6 .icon::before {
+  position: absolute;
+  content: "";
+  left: -8px;
+  top: -8px;
+  height: 100%;
+  width: 100%;
+  background: color-mix(in srgb, var(--accent-color), transparent 80%);
+  border-radius: 5px;
+  transition: all 0.3s ease-out 0s;
+  transform: translateZ(-1px);
+}
+
+.services .service-item6 h3 {
+  font-weight: 700;
+  margin: 10px 0 15px 0;
+  font-size: 22px;
+}
+
+.services .service-item6 p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.services .service-item6:hover {
+  background: #b5179e;
+  border-color: #b5179e;
+}
+
+.services .service-item6:hover .icon {
+  background: var(--surface-color);
+}
+
+.services .service-item6:hover .icon i {
+  color: var(--accent-color);
+}
+
+.services .service-item6:hover .icon::before {
+  background: color-mix(in srgb, var(--background-color), transparent 70%);
+}
+
+.services .service-item6:hover h3,
+.services .service-item6:hover p {
+  color: var(--contrast-color);
+}
+
+
 
 /*--------------------------------------------------------------
 # Clients Section

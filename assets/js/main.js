@@ -184,3 +184,14 @@
   });
 
 })();
+
+
+function initMap(){
+  
+  const centerMap = {lat: -23.5474385, lng: -46.6399719}
+  const mapOptions = {
+    center: centerMap,
+    zoom: 10
+  }
+  const map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
+}

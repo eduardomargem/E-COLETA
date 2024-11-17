@@ -58,4 +58,4 @@ Desenvolver um futuro sustentável é uma responsabilidade de todos. Com o **E-C
 ---
 
 ### Grupo E-COLETA  
-Este projeto é resultado do trabalho colaborativo de estudantes do curso **TADS-NB**, terceiro semestre. Ele representa nossa dedicação em aliar tecnologia e sustentabilidade para um mundo melhor.  
+Este projeto é resultado do trabalho colaborativo de estudantes do curso **TADS-NB**, terceiro semestre. Ele representa nossa dedicação em aliar tecnologia e sustentabilidade para um mundo melhor.

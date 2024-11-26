@@ -195,3 +195,18 @@ function initMap(){
   }
   const map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
 }
+
+//para edição do texto da pagina de perfil
+function enableEdit(fieldId) {
+  const field = document.getElementById(fieldId);
+  field.removeAttribute('readonly'); // Remove o atributo readonly
+  field.focus(); // Foca no campo para edição
+}
+
+function saveChanges() {
+  const fields = document.querySelectorAll('.form-control');
+  fields.forEach(field => {
+      field.setAttribute('readonly', true); // Define o campo como somente leitura após salvar
+  });
+  alert('Alterações salvas com sucesso!'); // Mensagem de confirmação
+}

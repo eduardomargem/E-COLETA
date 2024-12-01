@@ -77,8 +77,10 @@ a:hover {
   text-decoration: none;
 }
 
-h1,
-h2,
+h1
+h2{
+  color: #002D3D;
+}
 h4,
 h5,
 h6 {

@@ -79,9 +79,11 @@
   }
   
   h1{
-    color: black;
+    color: #002D3D;
   }
-  h2,
+  h2{
+    color: #002D3D;
+  }
   h3,
   h4,
   h5,

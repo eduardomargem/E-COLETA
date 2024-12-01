@@ -77,8 +77,12 @@
     text-decoration: none;
   }
   
-  h1,
-  h2,
+  h1{
+    color: #002D3D;
+  }
+  h2{
+    color: #002D3D;
+  }
   h3,
   h4,
   h5,

@@ -145,3 +145,17 @@ a {
     color: #228B22; 
     text-align: center; 
 }
+
+#bubble {
+    position: fixed; /* Fixa o elemento em relação à janela do navegador */
+    bottom: 20px;   /* Distância do fundo da janela */
+    right: 20px;    /* Distância da direita da janela */
+    width: 50px;    /* Largura do elemento */
+    height: 50px;   /* Altura do elemento */
+    /* Estilos adicionais, se necessário */
+}
+
+#bubble img {
+    width: 100%;    /* Faz a imagem ocupar 100% da largura do div */
+    height: auto;   /* Mantém a proporção da imagem */
+}

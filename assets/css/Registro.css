@@ -200,3 +200,32 @@ img {
     top: 40%;
     right: 2%; /* Abaixo do terceiro, alinhado à direita */
 }  
+
+/* Posicionamento para o link no canto inferior direito */
+#homeLink {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-decoration: none;
+    z-index: 1000;
+  }
+  
+  #bubble {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  #bubble img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+
+

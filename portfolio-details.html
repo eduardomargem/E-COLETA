@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Portfolio - É-Coleta</title>
+  <title>Marketing - É-Coleta</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -26,6 +26,7 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/portfolio-details.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
   <!-- =======================================================
   * Template Name: Eterna
@@ -152,18 +153,23 @@
 
           <div class="col-lg-4">
             <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
-              <h3>Relógio Smart Classic X10</h3>
+              <h3>Kit de compra COMPLETO E-COLETA</h3>
               <ul>
-                <li><strong>Preço</strong>: R$ 399,90 ou 5.687 <strong>E-Coins</strong></li>
+                <li><strong>Preço</strong>: R$ 2500 ou 5.687 <strong>E-Coins</strong></li>
                 <li><strong>Disponibilidade</strong>: Em estoque</li>
+                <li><strong>Ganhe 20000 moedas EPoint!</strong> Oferta unica!</li>
               </ul>
             </div>
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
               <h2>Descrição do Produto</h2>
-              <p>O Relógio Smart Classic X10 combina elegância e tecnologia em um único acessório. Perfeito para quem busca estilo e funcionalidade no dia a dia. Com um design moderno e pulseira ajustável, é ideal para todas as ocasiões.</p>
-              <li><i class="bi bi-check2-all"></i> <span><b>Material: </b>Caixa de aço inoxidável e pulseira de couro sintético.</span></li>
-              <li><i class="bi bi-check2-all"></i> <span><b>Tela: </b>AMOLED de 1,39 polegadas com alta resolução.</span></li>
-              <li><i class="bi bi-check2-all"></i> <span><b>Conectividade: </b>Bluetooth 5.0, compatível com Android e iOS.</span></li>
+              <p>Kit completo dos novos lançamento do marketing do É-Coleta!</p>
+              <ul>
+                <li><i class="bi bi-check2-all"></i> <span><b>Beneficios: </b>Contém o app da plataforma que você pode ganhar premios!</span></li>
+                <li><i class="bi bi-check2-all"></i> <span><b>Ao comprar com Epoints </b>você ganha 20000 moedas! e 55% off de desconto para completar a compra</span></li>
+                <li><i class="bi bi-check2-all"></i> <span><b>Garanta já o seu kit </b>faça a sua história! faça parte da nossa comunidade!</span></li>
+              </ul>
+              <!-- Botão de compra -->
+              <button id="buyButton" class="buy-btn">Comprar</button>
             </div>
           </div>
 
@@ -247,6 +253,47 @@
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
+   <!-- Script para exibir a mensagem SweetAlert -->
+
+   <style>
+    .buy-btn {
+      background-color: #09ff00; 
+      color: white;
+      font-size: 18px; 
+      font-weight: bold;
+      padding: 15px 30px; 
+      border: none;
+      border-radius: 8px; 
+      cursor: pointer;
+      transition: transform 0.2s, background-color 0.3s; 
+      width: 100%; 
+      max-width: 250px; 
+      margin: 20px auto 0; 
+      display: block; 
+      text-align: center;
+    }
+  
+    .buy-btn:hover {
+      background-color: #08f700; /* Cor mais escura ao passar o mouse */
+      transform: scale(1.1); /* Leve aumento ao passar o mouse */
+    }
+  
+    .buy-btn:active {
+      transform: scale(1); /* Reset ao clicar */
+    }
+  </style>
+
+
+<script>
+  document.getElementById('buyButton').addEventListener('click', function () {
+    Swal.fire({
+      title: 'Compra realizada! Ela chegará em alguns dias até você!',
+      text: 'Obrigado por adquirir o kit completo! É-COLETA!',
+      icon: 'success',
+      confirmButtonText: 'Ok'
+    });
+  });
+</script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>

@@ -200,3 +200,35 @@ def buscaCompra(codigo_compra):
 
 
 app.run(port=5000, host='localhost', debug=True)
+
+async function BuscaCompra(codigoCompra) {
+    const url = http://localhost:5000/buscaCompra/${codigoCompra}; // URL do endpoint com o código da compra
+
+    try {
+        const response = await fetch(url, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
+            },
+        });
+
+        if (!response.ok) {
+            throw new Error(Erro: ${response.statusText});
+        }
+
+        const result = await response.json();
+        console.log("Resposta da API:", result); // Exibe o JSON com o código da compra
+        return result; // Retorna o JSON recebido da API
+    } catch (error) {
+        console.error("Erro ao buscar compra:", error.message);
+    }
+}
+
+// Exemplo de uso:
+BuscaCompra("12345")
+    .then(response => {
+        console.log("Resultado da busca de compra:", response);
+    })
+    .catch(err => {
+        console.error("Erro capturado:", err);
+    });

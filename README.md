@@ -18,11 +18,11 @@ Inspirado pelas **ODS (Objetivos de Desenvolvimento Sustentável)** da ONU para 
 
 ### 🔐 Login de Usuários  
 - Sistema de autenticação que garante um acesso seguro e personalizado.  
-- Perfis de usuários com histórico de reciclagem e pontuação acumulada.  
+- cadastro completo para melhor entendimento do cliente.  
 
 ### 🎯 Gamificação e Marketplace  
-- A cada item reciclado, os usuários ganham pontos, promovendo um incentivo tangível para práticas sustentáveis.  
-- Troque seus pontos por cupons de descontos, brindes ou serviços, criando uma economia verde conectada.  
+- A cada item comprado, os usuários ganham pontos, promovendo um incentivo tangível para práticas sustentáveis.  
+  
 
 ---
 

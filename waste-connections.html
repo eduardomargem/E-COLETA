@@ -71,12 +71,12 @@
           <ul>
             <li><a href="index.html" class="active">Início</a></li>
             <li><a href="about.html">Sobre</a></li>
-            <li><a href="services.html">Calendario</a></li>
+            <li><a href="services.html">Serviços</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="team.html">Time</a></li>
             <li><a href="waste-connections.html">Mapa</a></li>
             <li><a href="blog.html">Blog</a></li>
-            <li><a href="blog.html">Entrar/Cadastrar</a></li>
+            <li><a href="">Entrar/Cadastrar</a></li>
             <li><a href="contact.html">Contato</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -126,54 +126,54 @@
     </section><!-- /Waste Connections Section -->
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8ywR3kZEC36Lcuy3xNkAnPS5hwVwerwg&callback=initMap"
-      async defer></script>
-    <script>
-      function initMap() {
+    async defer></script>
+<script>
+  function initMap() {
+    const markers = [
+      {
+        locationName: 'RAIA - Santa Cecília',
+        lat: -23.5361933,
+        lng: -46.6590942,
+        address: 'Alameda Barros, 562 - Santa Cecilia, São Paulo - SP, 01232-001'
+      },
+      {
+        locationName: 'Pão de Açúcar - Guatás',
+        lat: -23.6169366,
+        lng: -46.6520244,
+        address: 'Alameda dos Guatás, 1261 - Vila da Saúde, São Paulo - SP, 04053-042'
+      },
+      {
+        locationName: 'Casa Toni - Moema',
+        lat: -23.6095516,
+        lng: -46.6656062,
+        address: 'Alameda dos Maracatins, 1061 - Moema, São Paulo - SP, 04089-013'
+      },
+      {
+        locationName: 'Fleury - Unidade Jardins',
+        lat: -23.5590742,
+        lng: -46.6638965,
+        address: 'Alameda Jaú, 1725 - Jardim Paulista, São Paulo - SP, 01420-007'
+      },
+      {
+        locationName: 'Sesc - Unidade Bom Retiro',
+        lat: -23.5300433,
+        lng: -46.6450474,
+        address: 'Alameda Nothmann, 42 - Campos Elíseos, São Paulo - SP, 01216-000'
+      },
+      {
+        locationName: 'PEV - Estação Adolfo Pinheiro',
+        lat: -23.6506438,
+        lng: -46.7067398,
+        address: 'Av. Adolfo Pinheiro, 256 - Santo Amaro, São Paulo - SP, 04734-000'
+      },
+      {
+        locationName: 'Parque do Carmo',
+        lat: -23.570263,
+        lng: -46.4716513,
+        address: 'Av. Afonso de Sampaio e Sousa, 951 - Itaquera, São Paulo - SP, 08275-025'
+      },
 
-        const markers = [
-          {
-            locationName: 'RAIA - Santa Cecília',
-            lat: -23.5361933,
-            lng: -46.6590942,
-            adress: 'Alameda Barros, 562 - Santa Cecilia, São Paulo - SP, 01232-001'
-          },
-          {
-            locationName: 'Pão de Açucar - Guatás',
-            lat: -23.6169366,
-            lng: -46.6520244,
-            adress: 'Alameda dos Guatás, 1261 - Vila da Saúde, São Paulo - SP, 04053-042'
-          },
-          {
-            locationName: 'Casa Toni - Moema',
-            lat: -23.6095516,
-            lng: -46.6656062,
-            adress: 'Alameda dos Maracatins, 1061 - Moema, São Paulo - SP, 04089-013'
-          },
-          {
-            locationName: 'Fleury - Unidade Jardins',
-            lat: -23.5590742,
-            lng: -46.6638965,
-            adress: 'Alameda Jaú, 1725 - Jardim Paulista, São Paulo - SP, 01420-007'
-          },
-          {
-            locationName: 'Sesc - Unidade Bom Retiro',
-            lat: -23.5300433,
-            lng: -46.6450474,
-            adress: 'Alameda Nothmann, 42 - Campos Elíseos, São Paulo - SP, 01216-000'
-          },
-          {
-            locationName: 'PEV- Estação Adolfo Pinheiro',
-            lat: -23.6506438,
-            lng: -46.7067398,
-            adress: 'Av. Adolfo Pinheiro, 256 - Santo Amaro, São Paulo - SP, 04734-000'
-          },
-          {
-            locationName: 'Parque do Carmo',
-            lat: -23.570263,
-            lng: -46.4716513,
-            adress: 'Av. Afonso de Sampaio e Sousa, 951 - Itaquera, São Paulo - SP, 08275-025'
-          },
-          {
+      {
             locationName: 'Carrefour - Giovani Gronchi',
             lat: -23.6419978,
             lng: -46.7372362,
@@ -281,29 +281,49 @@
             lng: -46.6938975,
             adress: 'Praça do Cancioneiro, 15 - Cidade Monções - São Paulo - SP, CEP: 04548-060'
           }
-        ];
+      
+    ];
 
-        const fehMarker = 'https://img.icons8.com/external-others-inmotus-design/67/external-Pointer-poi-others-inmotus-design-13.png';
+    const markerIcon = 'https://img.icons8.com/external-others-inmotus-design/67/external-Pointer-poi-others-inmotus-design-13.png';
 
-        const centerMap = { lat: -23.5474385, lng: -46.6399719 };
-        const mapOptions = {
-          center: centerMap,
-          zoom: 10,
-        };
-        const map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
 
-        for (let i = 0; i < markers.length; i++) {
-          const marker = new google.maps.Marker({
-            position: { lat: markers[i]['lat'], lng: markers[i]['lng'] },
-            map: map,
-            icon: fehMarker
-          });
-        }
-      }
-      document.addEventListener('DOMContentLoaded', function () {
-        initMap();
+    const mapCenter = { lat: -23.5474385, lng: -46.6399719 };
+    const mapOptions = {
+      center: mapCenter,
+      zoom: 12,
+    };
+
+  
+    const map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
+
+
+    markers.forEach((markerData) => {
+      const marker = new google.maps.Marker({
+        position: { lat: markerData.lat, lng: markerData.lng },
+        map: map,
+        icon: markerIcon,
+        title: markerData.locationName,
       });
-    </script>
+
+  
+      const infoWindow = new google.maps.InfoWindow({
+        content: `<div>
+                    <h4>${markerData.locationName}</h4>
+                    <p>${markerData.address}</p>
+                  </div>`,
+      });
+
+  
+      marker.addListener('click', () => {
+        infoWindow.open(map, marker);
+      });
+    });
+  }
+
+
+  document.addEventListener('DOMContentLoaded', initMap);
+</script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ol3/3.20.1/ol.js"></script>
 
   </main>
